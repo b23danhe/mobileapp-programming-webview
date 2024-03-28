@@ -13,11 +13,11 @@ import androidx.appcompat.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     public void showExternalWebPage(){
-        // TODO: Add your code for showing external web page here
+        myWebView.loadUrl("https://his.se");
     }
 
     public void showInternalWebPage(){
-        // TODO: Add your code for showing internal web page here
+        myWebView.loadUrl("https://his.se");
     }
 
     WebView myWebView;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         myWebView = findViewById(R.id.my_webview);
         myWebView.setWebViewClient(new WebViewClient()); // Do not open in Chrome!
         myWebView.getSettings().setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://his.se");
+        showExternalWebPage();
 
         /*
         * Rename your App. Tip: Values->Strings
