@@ -9,6 +9,14 @@ mitt student användarnamn "b23danhe".
 För att ändra namnet på appen behövde String variabeln "app_name" ändras på följande sätt:
 `<string name="app_name">Häst View</string>`
 
+För att ge appen tillgång till internet lades följande kod till i AndroidManifest.xml:
+`<uses-permission android:name="android.permission.INTERNET" />`
+
+Därefter skapades ett nytt WebView element i activity_main.xml med Id: my_webview. Detta element
+används för att skapa en ny variabel av typen WebView med namnet myWebView i MainActivity.java.
+För att variabeln ska få WebView egenskaperna så kopplas det ihop med det Id som elementet fick 
+dvs. my_webview i activity_main.xml.
+Därefter skapas en ny WebViewClient i myWebView där Javascript tillåts att köras.
 
 ## Följande grundsyn gäller dugga-svar:
 
