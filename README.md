@@ -1,7 +1,12 @@
 
 # Rapport
 
-För att ändra namnet på appen behövde följande String variabeln "app_name" ändras på följande sätt:
+Ett litet förtydligande kring användarnamnet sedan förra inlämingen:
+Jag hade missat att det var mitt andra git-hub konto namn, "marazp", som mina commit/pusch hamnade
+under. Men jag har nu försökt att åtgärda det så att dom senare commit/pusch som görs hamnar under 
+mitt student användarnamn "b23danhe".
+
+För att ändra namnet på appen behövde String variabeln "app_name" ändras på följande sätt:
 `<string name="app_name">Häst View</string>`
 
 
