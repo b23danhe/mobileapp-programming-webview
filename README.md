@@ -1,7 +1,7 @@
 
 # Rapport
 
-För att ändra namn på appen behövde följande String variabeln "app_name" ändras på följande sätt:
+För att ändra namnet på appen behövde följande String variabeln "app_name" ändras på följande sätt:
 `<string name="app_name">Häst View</string>`
 
 
