@@ -1,9 +1,9 @@
 
 # Rapport
 
-**Skriv din rapport här!**
+För att ändra namn på appen behövde följande String variabeln "app_name" ändras på följande sätt:
+`<string name="app_name">Häst View</string>`
 
-_Du kan ta bort all text som finns sedan tidigare_.
 
 ## Följande grundsyn gäller dugga-svar:
 
