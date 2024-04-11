@@ -18,6 +18,23 @@ För att variabeln ska få WebView egenskaperna så kopplas det ihop med det Id 
 dvs. my_webview i activity_main.xml.
 Därefter skapas en ny WebViewClient i myWebView där Javascript tillåts att köras.
 
+För att skapa en internalWebPage så skapades en ny html-fil där en enkel html kod skrevs in för att
+skapa en enkel internalWebPage. Även en bild lades till som sedan länkas in i html-koden.
+
+För att få den externa websidan att läsas in implementerades showExternalWebPage() på följande sätt:
+```
+private void showExternalWebPage() {
+    myWebView.loadUrl("https://his.se");
+}
+```
+På samma sätt implementerades showInternalWebPage() men där används istället fljande url:
+```
+myWebView.loadUrl("file:///android_asset/about.html");
+```
+För att få "External Web Page" och "Internal Web Page" knapparna att fungera i dropdown menyn så
+anropas metoderna genom att skriva in `showExternalWebPage();` och `showInternalWebPage();` under
+motsvarande "action" kopplad till motsvarande menyval i dropdown menyn.
+
 ## Följande grundsyn gäller dugga-svar:
 
 - Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
